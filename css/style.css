@@ -1,4 +1,4 @@
-﻿@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap');
 
 :root {
   /* Colors */
@@ -220,19 +220,19 @@ header.scrolled {
   -webkit-backdrop-filter: blur(20px);
   box-shadow: var(--shadow-glass);
   border-bottom: 1px solid rgba(185, 144, 61, 0.15);
-  padding: 12px 0;
+  padding: 0;
 }
 
 header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 24px;
+  padding: 10px 24px;
   transition: var(--transition-smooth);
 }
 
 header.scrolled .container {
-  padding: 8px 24px;
+  padding: 6px 24px;
 }
 
 .logo {
@@ -2080,5 +2080,71 @@ textarea.form-control {
   .contact-form-wrapper {
     max-width: 100% !important;
     margin-left: 0 !important;
+  }
+}
+
+/* Logo Image Premium Styles */
+.logo-img {
+  height: 65px;
+  width: auto;
+  object-fit: contain;
+  display: block;
+  transition: height 0.3s ease;
+}
+
+header.scrolled .logo-img {
+  height: 50px;
+}
+
+.footer-col .logo-img {
+  height: 85px;
+}
+
+/* Premium Dark Header Theme to Highlight the Logo */
+header {
+  background-color: #1A1714 !important; /* Solid dark charcoal to make the white/gold logo pop */
+  border-bottom: 1px solid rgba(185, 144, 61, 0.15) !important;
+}
+
+header.scrolled {
+  background-color: rgba(26, 23, 20, 0.95) !important;
+  padding: 0 !important;
+  backdrop-filter: blur(20px) !important;
+  -webkit-backdrop-filter: blur(20px) !important;
+  border-bottom: 1px solid rgba(185, 144, 61, 0.25) !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3) !important;
+}
+
+/* Light Navigation Links for Dark Header */
+header .nav-link {
+  color: rgba(255, 255, 255, 0.85) !important;
+}
+
+header .nav-link:hover,
+header .nav-link.active {
+  color: var(--accent-gold) !important;
+}
+
+/* Header Action Button (WhatsApp) */
+header .btn-secondary {
+  color: var(--accent-gold) !important;
+  border-color: var(--accent-gold) !important;
+}
+
+header .btn-secondary:hover {
+  background-color: var(--accent-gold) !important;
+  color: #1A1714 !important;
+}
+
+/* Hamburger Icon for Mobile */
+header .hamburger span {
+  background-color: #FFFFFF !important;
+}
+
+/* Mobile Menu Drawer Theme Consistency */
+@media (max-width: 992px) {
+  header .nav-menu {
+    background-color: #1A1714 !important;
+    border-left: 1px solid rgba(185, 144, 61, 0.15) !important;
   }
 }
