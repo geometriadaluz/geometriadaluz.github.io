@@ -232,7 +232,7 @@ header .container {
 }
 
 header.scrolled .container {
-  padding: 6px 24px;
+  padding: 10px 24px;
 }
 
 .logo {
@@ -2093,7 +2093,7 @@ textarea.form-control {
 }
 
 header.scrolled .logo-img {
-  height: 50px;
+  height: 65px;
 }
 
 .footer-col .logo-img {
