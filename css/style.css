@@ -227,12 +227,12 @@ header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 24px;
+  padding: 18px 24px;
   transition: var(--transition-smooth);
 }
 
 header.scrolled .container {
-  padding: 10px 24px;
+  padding: 18px 24px;
 }
 
 .logo {
@@ -2085,7 +2085,7 @@ textarea.form-control {
 
 /* Logo Image Premium Styles */
 .logo-img {
-  height: 65px;
+  height: 80px;
   width: auto;
   object-fit: contain;
   display: block;
@@ -2093,7 +2093,7 @@ textarea.form-control {
 }
 
 header.scrolled .logo-img {
-  height: 65px;
+  height: 80px;
 }
 
 .footer-col .logo-img {
